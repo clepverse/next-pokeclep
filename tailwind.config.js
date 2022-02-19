@@ -8,6 +8,9 @@ module.exports = {
       minHeight: {
         75: "75vh",
       },
+      width: {
+        23: "23%",
+      },
     },
   },
   plugins: [],
