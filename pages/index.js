@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export async function getStaticProps() {
@@ -21,13 +22,23 @@ export async function getStaticProps() {
 
 export default function Home({ pokemons }) {
   return (
-    <div className="">
-      <h1 className=""></h1>
-      <ul className="">
+    <>
+      <div className="flex justify-center items-center mb-4">
+        <h1 className="text-5xl text-cente font-bold text-red-600 mr-3">
+          Poke<span className="text-indigo-600">Clep</span>
+        </h1>
+        <Image
+          src="/images/pokeball.png"
+          width="50"
+          height="50"
+          alt="PokeClep"
+        />
+      </div>
+      <div className="flex flex-wrap justify-between items-center max-w-5xl my-0 mx-auto">
         {pokemons.map((pokemon) => (
-          <li key={pokemon.id}>{pokemon.name}</li>
+          <p key={pokemon.id}>{pokemon.name}</p>
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
   );
 }
