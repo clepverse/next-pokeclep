@@ -6,7 +6,7 @@ module.exports = {
         helv: "Helvetica, Arial, sans-serif",
       },
       minHeight: {
-        70: "70vh",
+        75: "75vh",
       },
     },
   },

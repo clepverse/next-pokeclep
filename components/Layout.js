@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="min-h-70">{children}</main>
+      <main className="min-h-75">{children}</main>
       <Footer />
     </div>
   );
