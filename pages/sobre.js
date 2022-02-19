@@ -4,7 +4,7 @@ import { MdContactMail } from "react-icons/md";
 export default function sobre() {
   return (
     <div className="text-slate-800 flex flex-col justify-center items-center">
-      <div className="bg-indigo-500 rounded-lg px-4 py-1 flex justify-center items-center mb-4">
+      <div className="bg-indigo-500 rounded-lg px-4 py-1 flex justify-center items-center mb-10">
         <h1 className="text-3xl font-semibold text-slate-100 ">
           Sobre o projeto
         </h1>
