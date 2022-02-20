@@ -2,9 +2,10 @@ import Image from "next/image";
 import Card from "../components/Card";
 import Search from "../components/Search";
 import { useState } from "react";
+import LogoMain from "../components/LogoMain";
 
 export async function getStaticProps() {
-  const maxPokemons = 251;
+  const maxPokemons = 252;
   const api = "https://pokeapi.co/api/v2/pokemon/";
 
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
@@ -40,17 +41,7 @@ export default function Home({ pokemons }) {
 
   return (
     <>
-      <div className="flex justify-center items-center mb-6">
-        <h1 className="text-5xl text-cente font-bold text-red-600 mr-3">
-          Poke<span className="text-indigo-600">Clep</span>
-        </h1>
-        <Image
-          src="/images/pokeball.png"
-          width="50"
-          height="50"
-          alt="PokeClep"
-        />
-      </div>
+      <LogoMain />
       <div className="flex justify-center items-center mb-6">
         <Search pesquisa={pesquisa} setPesquisa={setPesquisa} />
       </div>

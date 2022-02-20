@@ -19,8 +19,9 @@ export default function sobre() {
           href="https://pokeapi.co/"
           className="text-indigo-900 underline decoration-indigo-600"
         >
-          (pokéAPI).
+          (pokéAPI)
         </a>
+        .
       </p>
       <p className="mb-4">
         App criado por{" "}
