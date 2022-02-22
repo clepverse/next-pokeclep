@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-center bg-gradient-to-t from-indigo-900 to-indigo-600 h-36    text-slate-200">
+    <footer className="flex items-center justify-center bg-gradient-to-t from-indigo-900 to-indigo-600 h-28 text-slate-200 sm:max-w-7xl sm:mx-auto sm:rounded-t-xl">
       <ul className="flex flex-row mx-4 text-4xl">
         <li className="mr-2">
           <a href="https://github.com/metaclep" target="_blank ">
