@@ -14,7 +14,7 @@ export default function Types({ pokemon }) {
                 ? "bg-red-500"
                 : item.type.name === "water"
                 ? "bg-blue-500"
-                : item.type.name === "eletric"
+                : item.type.name === "electric"
                 ? "bg-yellow-400"
                 : item.type.name === "grass"
                 ? "bg-lime-500"

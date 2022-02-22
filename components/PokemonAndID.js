@@ -15,7 +15,13 @@ export default function PokemonAndID({ pokemon }) {
       />
       <div className="">
         <h3 className="my-2 mx-auto text-2xl">Número:</h3>
-        <p className="text-lg">#{pokemon.id}</p>
+        <p className="text-2xl font-semibold text-slate-900 ">
+          <span className="text-sm bg-indigo-500 pt-2 px-1 rounded-l-sm text-slate-200">
+            id<span className="font-bold">#</span>
+          </span>
+
+          {pokemon.id}
+        </p>
       </div>
     </>
   );
